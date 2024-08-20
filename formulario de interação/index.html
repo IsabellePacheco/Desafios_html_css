@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de interação</title>
+</head>
+<body bgcolor="azure">
+    <form action="site.html">
+    <h1 > 📃Formulário de interação </h1>
+    <hr>
+    <p>Digite o seu nome: <input type="text" name="nome" placeholder="Digite aqui" required></p> <!--placeholder deixa sujestão de texto -->
+
+    <p>Digite o seu endereço: <input type="text" name="endereco" value="Rua e número "></p>
+
+    <label for="data">Selecionar sua data de nacimento</label>
+    <input type="date" id="Data de nascimento">
+
+    <p>Digite o bairro: <input type="text" name="cidade" value="Bairro" > </p>
+
+    <p>Digite a cidade: <input type="text" name="cidade" value="Santo André"></p>
+
+    <p>Entre com a sua mensagem:</p> 
+    <textarea maxlength="500" placeholder="Digite ate 500 caracteres."></textarea>
+
+    <p>Escolha o(s) modelo(s) de trabalho: </p>
+    <ul style="list-style: disc;"> <!--lista nao ordenada-->
+        <li> <input type="checkbox" > Presencial</li>
+        <li> <input type="checkbox" > Remoto</li>
+        <li> <input type="checkbox" > Híbrido </li>
+    </ul>
+    <p>Esolha o período de trabalho:</p>
+    <ul style="list-style: disc;">
+        <li> <input type="radio"> Manhã</li>
+        <li> <input type="radio"> Tarde</li>
+        <li> <input type="radio"> Noite</li>
+    </ul>
+
+    <p>Escolha um Estado:</p>
+    <label for="estados"></label>
+    <select name="estados" id="">estados
+        <optgroup>
+        <option value="Sao Paulo"> São Paulo</option>
+        <option value="Rio de Janeiro"> Rio de Janeiro</option>
+        <option value="Parana">Parana</option>
+        <option value="Espiro santo">Espirito Santo</option>
+        </optgroup>
+    </select>
+
+    <p><input type="checkbox" name="termodeconsentimento" id="">Aceita os  <a href="link"> termos de uso</a> do site</a></p>
+
+    <a href="site.html"><input type="submit" name="dados" value="Enviar Dados"> </a>
+    <a href="index.html"><input type="reset" name="limpa" value="Limpar Campo"></a>
+
+    
+</form>
+
+</body>
+</html>
